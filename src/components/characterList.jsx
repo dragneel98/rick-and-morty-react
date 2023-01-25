@@ -4,11 +4,11 @@ import Character from './character';
 function ButtonPage (props) {
     
     return(
-        <div className='navPage'>
-            <p> page:{props.page} </p>
+        <div>
+            <p> Page:{props.page} </p>
             <div className='buttons'>
-                <button className= {props.page>1 ? "button1" : "button-hidden"} onClick={() => props.setPage(props.page - 1)}>previous</button>
-                <button className='button2' onClick={() => props.setPage(props.page + 1)}>next</button>
+                <button className= {props.page>1 ? "button1" : "button-hidden"} onClick={() => props.setPage(props.page - 1)}>Previous</button>
+                <button className='button2' onClick={() => props.setPage(props.page + 1)}>Next</button>
             </div>
         </div>
     )

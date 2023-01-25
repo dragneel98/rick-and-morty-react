@@ -14,7 +14,6 @@ body{
   text-align: center;
 }
 
-
 .app-container{
   margin: 1rem;
 }
@@ -31,6 +30,7 @@ body{
   border-radius: 2rem 4rem;
   padding: 1rem;
   overflow: auto;
+  font-size: 1.2rem;
 }
 
 .character-img{
@@ -40,23 +40,31 @@ body{
 .buttons{
   display: flex;
   justify-content: space-between;
+
+  .button1{
+    border: none;
+    border-radius: 2rem 0 0 2rem;
+    background-color:#3735F0;
+    color: #03B3CB;
+  }
+
+  .button-hidden{
+    display: none;
+  }
+  
+  .button2{
+    border: none;
+    border-radius: 0 2rem 2rem 0;
+    background-color:#3735F0;
+    color: #03B3CB;
+  }
 }
 
-.button1{
-  border: none;
-  border-radius: 2rem 0 0 2rem;
-}
-.button-hidden{
-  display: none;
-}
-.button2{
-  border: none;
-  border-radius: 0 2rem 2rem 0;
-}
 .status{
   display: flex;
   justify-content: space-between;
 }
+
 .alive{
   color: #8DED6F;
 }
